@@ -15,7 +15,7 @@ function getLivroPorId(id) {
 function insereLivro(livroNovo) {
   const livros = JSON.parse(fs.readFileSync("livros.json"))
 
-  // Filtra para remover objetos vazios antes de adicionar o novo livro
+  // Filtra para remover objetos vazios antes de adicionar o novo livro ;
   const livrosFiltrados = livros.filter(livro => Object.keys(livro).length > 0)
 
   const novaListaDeLivros = [ ...livrosFiltrados, livroNovo ]
